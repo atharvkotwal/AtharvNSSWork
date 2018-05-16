@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>Department
+<head>
 	<title>Home Page</title>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="style.css">
   <style>
+   
+
   .jumbotron {
       padding-top: 70px;
       padding-bottom: 70px;
@@ -18,23 +23,32 @@
       margin-top: 25px;
 
     }
-  .logo{
-    background: url('logo128.png')
+  #logo{
+  	position: fixed;
+  	top: 0;
+  	left: 0;
     width:50px;
     height:50px;
+    background-color: black;
+  }
+  #nav{
+  	position: fixed;
+  	top: 0;
+  	left:50px;
   }
 
 	</style>
 </head>
+
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
   		<div class="container-fluid">
     			<div class="navbar-header">
                <div class="navbar-brand">
-                        <a href="#" class="navbar-logo"><img src="logo128.png" alt="NSS" ></a>
-                        <a class="navbar-caption" href="#">NSS IIT Bombay</a>
-                    </div>
-              <!--<a class="navbar-brand" href="#">NSS IIT BOMBAY</a>-->
+                        <a href="#" class="navbar-logo"><img src="logo128.png" alt="NSS" id="logo" ></a>
+                </div>
+               <a class="navbar-brand" href="#">NSS IIT BOMBAY</a>
       				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 
 			        <span class="icon-bar"></span>
@@ -67,137 +81,143 @@
 		    	</div>
   		</div>
 	</nav>
-	<div class="jumbotron text-center">
-  		<h1>VIKAS</h1>
-  		<img src="ganeshaidol.jpg" class="img-responsive" style="width:100%">
+	
+	<div class="jumbotron text-center" style="background: url('ganeshaidol.jpg'); height:700px; width: 100%; background-size:100% 100%; backface-visibility: 20%;"">
+  		<h1>NSS IITB</h1>
+  		<div class="col-md-12">
+  		<p>National Service Scheme (NSS) IIT Bombay is the largest social student body in IIT Bombay. We conduct various activities on a day to day basis with the motivation of bringing about positive change in the Society.</p></div>
+  		
 	</div>
-	<div class="jumbotron text-center">
-  		<h1>ACTIVITIES</h1>
-  		<div class="row">
-		    <div class="col-sm-4">
-		    	<h3>Eco Friendly Ganesha</h3>
-		    	<img src="ganeshaidol.jpg" class="img-responsive"  style="width:90% center" alt="Image">
-		      	<p>Text on above topic</p>
-		    </div>
-		    <div class="col-sm-4">
-		    	<h3>Tarang</h3>
-		    	<img src="tarang.jpg" class="img-responsive"  style="width:90% center" alt="Image">
-		      	<p>Text on above topic</p>
-		    </div>
-		    <div class="col-sm-4">
-		    	<h3>Reducing Food Wastage</h3>
-		    	<img src="food_wastage.jpg" class="img-responsive" style="width:90% center" alt="Image">
-		      	<p>Text on above topic</p>
-		    </div>
-		</div>
-	</div>
-	<section id="team" style="text-align: center;" >
-        <div class="container">
-            <!--<div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <h2 class="section-heading" >Team</h2>
-                    
-                    <br>
-                    <h3 class="section-subheading text-muted">
-                      83 Institute Student Mentors and 209
-Department Academic Mentors make up the Student Mentor Program team at IIT
-Bombay
-                    </h3>
-                </div>
-            </div>-->
-            <div class="row" >
-            	<h2>Department Heads</h2>
-                  <div class="col-md-2 col-md-offset-4">
-                      <div class="team-member">
-                          <img src="Atharv photo.jpg" class="img-responsive img-circle" alt="">
-                          <h5>Atharv Kotwal</h5>
-                          
-                          <ul class="list-inline social-buttons">
-                              <li><a href=#><i class="fa fa-facebook"></i></a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-md-2">
-                      <div class="team-member">
-                          <img src="Atharv photo.jpg" class="img-responsive img-circle" alt="">
-                          <h5>Atharv Kotwal</h5>
-                          
-                          <ul class="list-inline social-buttons">
-                              <li><a href=#><i class="fa fa-facebook"></i></a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-            </div>
-            <div class="row">
-            		 <h3>Activity Associates</h3>
-                  <div class="col-md-2 col-md-offset-1">
-                      <div class="team-member">
-                          <img src="Atharv photo.jpg" class="img-responsive img-circle" alt="">
-                          <h5>Atharv Kotwal</h5>
-                          
-                          <ul class="list-inline social-buttons">
-                              <li><a href=#><i class="fa fa-facebook"></i></a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-md-2">
-                      <div class="team-member">
-                          <img src="Atharv photo.jpg" class="img-responsive img-circle" alt="">
-                          <h5>Atharv Kotwal</h5>
-                          
-                          <ul class="list-inline social-buttons">
-                              <li><a href=#><i class="fa fa-facebook"></i></a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-md-2">
-                      <div class="team-member">
-                          <img src="Atharv photo.jpg" class="img-responsive img-circle" alt="">
-                          <h5>Atharv Kotwal</h5>
-                          
-                          <ul class="list-inline social-buttons">
-                              <li><a href=#><i class="fa fa-facebook"></i></a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-md-2">
-                      <div class="team-member">
-                          <img src="Atharv photo.jpg" class="img-responsive img-circle" alt="">
-                          <h5>Atharv Kotwal</h5>
-                          
-                          <ul class="list-inline social-buttons">
-                              <li><a href=#><i class="fa fa-facebook"></i></a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-md-2">
-                      <div class="team-member">
-                          <img src="Atharv photo.jpg" class="img-responsive img-circle" alt="">
-                          <h5>Atharv Kotwal</h5>
-                         
-                          <ul class="list-inline social-buttons">
-                              <li><a href=#><i class="fa fa-facebook"></i></a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-            </div>
-            
-    </section>
+	<section class="timeline">
+    <div class="container">
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
 
+        <div class="timeline-content js--fadeInLeft">
+          <h2>Title</h2>
+       		<div class="date">1 MAY 2016</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <a class="bnt-more" href="javascript:void(0)">More</a>
+        </div>
+      </div> 
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content timeline-card js--fadeInRight">
+        	<div class="timeline-img-header">
+          	<h2>Card Title</h2>
+        	</div>
+        	<div class="date">25 MAY 2016</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <a class="bnt-more" href="javascript:void(0)">More</a>
+        </div>
+
+      </div>   
+      
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content js--fadeInLeft">
+        	<div class="date">3 JUN 2016</div>
+          <h2>Quote</h2>
+          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
+        </div>
+      </div>   
+      
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content js--fadeInRight">
+        	<h2>Title</h2>
+        	<div class="date">22 JUN 2016</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <a class="bnt-more" href="javascript:void(0)">More</a>
+        </div>
+      </div>   
+      
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content timeline-card js--fadeInLeft">
+        	<div class="timeline-img-header">
+          	<h2>Card Title</h2>
+        	</div>
+        	<div class="date">10 JULY 2016</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <a class="bnt-more" href="javascript:void(0)">More</a>
+        </div>
+      </div>   
+
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content timeline-card js--fadeInRight">
+        	<div class="timeline-img-header">
+          	<h2>Card Title</h2>
+        	</div>
+        	<div class="date">30 JULY 2016</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <a class="bnt-more" href="javascript:void(0)">More</a>
+        </div>
+      </div>  
+      
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content js--fadeInLeft">
+        	<div class="date">5 AUG 2016</div>
+          <h2>Quote</h2>
+          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
+        </div>
+      </div>   
+
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content timeline-card js--fadeInRight">
+        	<div class="timeline-img-header">
+          	<h2>Card Title</h2>
+        	</div>
+        	<div class="date">19 AUG 2016</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <a class="bnt-more" href="javascript:void(0)">More</a>
+        </div>
+      </div>  
+      
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content js--fadeInLeft">
+        	<div class="date">1 SEP 2016</div>
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <a class="bnt-more" href="javascript:void(0)">More</a>
+        </div>
+      </div>   
+
+      
+          
+    </div>
+  	</section>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+    <script src="index.js"></script>
+           
 
 	<div class="container-fluid bg-4 text-center">
-  		<h1>Let's Socialise</h1><h1>
-  		<a href="#" class="facebook"><i class="fa fa-facebook-official"></i></a>
+  		<h1 style="color: #302caa">Let's Socialise</h1>
+  		<a href="#" class="facebook" ><i class="fa fa-facebook-official"></i></a>
         <a href="#" class="wordpress"><i class="fa fa-wordpress"></i></a>
-        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> </h1>
+        <a href="#" class="youtube" ><i class="fa fa-youtube"></i></a>
+        <a href="#" class="twitter" ><i class="fa fa-twitter"></i></a> 
 	</div>
 </body>
 </html>

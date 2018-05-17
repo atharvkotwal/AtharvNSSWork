@@ -1,0 +1,2 @@
+I am not getting what's wrong in line no.80. Just by changing some space " " browser shows/unshows another scrollbar.
+I have tried to make navbar look good but it has some defects though I have carefully copied script from template.

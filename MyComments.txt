@@ -1,2 +1,3 @@
-I am not getting what's wrong in line no.80. Just by changing some space " " browser shows/unshows another scrollbar.
-I have tried to make navbar look good but it has some defects though I have carefully copied script from template.
+Removed prev defects
+Only some color and font editing is required and adding photos&content(you can do this nautatva. My Filezilla is working slow)
+The green line of timeline is going till footer now I don't know why though I have not touched that code at all. I'll try to fix it.
